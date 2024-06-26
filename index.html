@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Um pouco sobre mim</title>
+</head>
+<body>
+    <header class="text-center p-3">
+        <h1>Bernardo Luiz Guimarães Umbelino</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#repositorios">Repositórios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#conteudos">Conteúdos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#colegas">Colegas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="perfil" class="container text-center mt-4">
+        <div id="foto"></div>
+        <h2 id="nome">Bernardo Umbelino</h2>
+        <p id="descricao">Sou uma pessoa com fome de aprendizado, tenho experiências na área administrativa, pois, já trabalhei em empresas!</p>
+        <div>
+            <a href="https://github.com/bbrd2712" target="_blank">
+                <img id="git_logo" src="assets/img/log_GitHub.png" alt="GitHub Logo">
+            </a>
+        </div>
+    </section>
+    <section id="repositorios" class="container mt-4">
+        <h2>Repositórios</h2>
+        <div id="cartoes" class="row"></div>
+    </section>
+    <section id="conteudos" class="container mt-4">
+        <h2>Conteúdos Sugeridos</h2>
+        <div id="conteudos_carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" id="carousel-items">
+                <!-- Carousel items will be dynamically inserted here -->
+            </div>
+            <a class="carousel-control-prev" href="#conteudos_carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#conteudos_carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <section id="colegas" class="container mt-4">
+        <h2>Colegas de Trabalho</h2>
+        <div class="row" id="colegas-list">
+            <!-- Colegas will be dynamically inserted here -->
+        </div>
+    </section>
+    <footer class="text-center p-3">
+        <p>Desenvolvido por Bernardo Umbelino</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

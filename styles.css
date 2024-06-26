@@ -1,0 +1,169 @@
+/* styles.css */
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 0 0;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #adb5bd;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+#foto img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+#repositorios #cartoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+#cartao {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  flex: 1 1 calc(33.333% - 40px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#cartao:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#cartao h4 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+#cartao p {
+  margin: 0;
+  color: #666;
+  font-size: 1rem;
+}
+
+.grupo {
+  text-align: center;
+}
+
+.grupo .interface {
+  margin-top: 20px;
+}
+
+.grupo .interface .titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.grupo .interface .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.grupo .interface .colega {
+  width: 200px;
+  text-align: center;
+}
+
+.grupo .interface .colega img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.grupo .interface .colega img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 2rem;
+  }
+
+  header nav ul {
+      flex-direction: column;
+  }
+
+  header nav ul li {
+      margin: 10px 0;
+  }
+
+  #cartao {
+      flex: 1 1 100%;
+  }
+
+  .grupo .interface .flex {
+      flex-direction: column;
+  }
+
+  .grupo .interface .colega {
+      width: 100%;
+  }
+}
